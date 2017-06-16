@@ -5,6 +5,9 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -17,10 +20,10 @@ var banner = ['/*!\n',
 ].join('');
 
 gulp.task('less', function() {
-    return gulp.src('less/blog.less')
+    return gulp.src('src/less/*.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('src/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -28,10 +31,16 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/blog.css')
+    return gulp.src('src/css/**/*.css')
+        .pipe(concat('blog.css'))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('css'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false,
+            remove:true
+        }))
+        .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -39,11 +48,14 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/blog.js')
+    return gulp.src('src/js/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(concat('blog.js'))
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('js'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -63,10 +75,10 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
-    gulp.watch('less/*.less', ['less']);
-    gulp.watch('css/*.css', ['minify-css']);
-    gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('src/less/*.less', ['less']);
+    gulp.watch('src/css/**/*.css', ['minify-css']);
+    gulp.watch('src/js/**/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
+    gulp.watch('src/js/**/*.js', browserSync.reload);
 });

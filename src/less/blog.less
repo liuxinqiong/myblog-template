@@ -1,11 +1,64 @@
-@import "variables.less";
-@import "mixins.less";
+@import "component/variables.less";
+@import "component/mixins.less";
 
 // 全局
 body {
   .serif-font;
   font-size: 20px;
   color: @gray-dark;
+  -webkit-tap-highlight-color: @theme-primary;
+}
+
+// 按钮组
+.btn {
+  .sans-serif-font;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 0;
+  padding: 15px 25px;
+}
+
+.btn-primary {
+  .button-variant(white, @theme-primary, @theme-primary);
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+.btn-default {
+  &:hover,
+  &:focus {
+    background-color: @theme-primary;
+    border: 1px solid @theme-primary;
+    color: white;
+  }
+}
+
+// Highlight Color Customization
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: @theme-primary;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: @theme-primary;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
 }
 
 //排版
@@ -174,6 +227,7 @@ blockquote {
   background-color: @gray-light;
   background: no-repeat center center;
   background-attachment: scroll;
+  position: relative;
 @inlcude background-cover;
   // NOTE: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
@@ -243,8 +297,11 @@ blockquote {
   }
   .post-search{
     background-color: fadeout(#000,40%);
-    padding: 20px 50px 10px 50px;
+    padding: 20px 50px;
     color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 }
 
@@ -300,6 +357,19 @@ blockquote {
   }
 }
 
+footer {
+  padding: 50px 0 65px;
+  .list-inline {
+    margin: 0;
+    padding: 0;
+  }
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
 // Sections
 .section-heading {
   font-size: 36px;
@@ -316,19 +386,6 @@ blockquote {
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-}
-
-footer {
-  padding: 50px 0 65px;
-  .list-inline {
-    margin: 0;
-    padding: 0;
-  }
-  .copyright {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 0;
-  }
 }
 
 // Contact Form Styles
@@ -393,58 +450,7 @@ form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid @gray-lighter;
 }
 
-// Button Styles
-.btn {
-  .sans-serif-font;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  border-radius: 0;
-  padding: 15px 25px;
-}
 
-.btn-primary {
-  .button-variant(white, @theme-primary, @theme-primary);
-}
 
-.btn-lg {
-  font-size: 16px;
-  padding: 25px 35px;
-}
 
-.btn-default {
-  &:hover,
-  &:focus {
-    background-color: @theme-primary;
-    border: 1px solid @theme-primary;
-    color: white;
-  }
-}
 
-// Highlight Color Customization
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: @theme-primary;
-}
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: @theme-primary;
-}
-
-img::selection {
-  color: white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
-
-body {
-  -webkit-tap-highlight-color: @theme-primary;
-}

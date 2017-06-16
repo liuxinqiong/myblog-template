@@ -11,7 +11,7 @@
     <!-- Additional fonts for this theme -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this theme -->
-    <link href="css/blog.css" rel="stylesheet">
+    <link href="dist/blog.min.css" rel="stylesheet">
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
         .navbar-toggler {
@@ -62,7 +62,7 @@
     </div>
 </nav>
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+<header class="intro-header" style="background-image: url('asset/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -74,7 +74,16 @@
         </div>
     </div>
     <div class="post-search">
-        文章搜索
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <div class="container">
@@ -124,10 +133,55 @@
                 </h3>
                 <p class="post-meta">Posted by <a href="#">刘新琼</a> on 2017-06-15 18:47</p>
             </div>
+            <hr>
+            <!-- Pager -->
+            <div id="post-pager">
+                <ul class="pagination">
+
+                </ul>
+            </div>
         </div>
 
     </div>
 </div>
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/liuxinqiong">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; pig1024.me 2017.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- jQuery Version 3.1.1 -->
 <script src="lib/jquery/jquery.js"></script>
 
@@ -138,6 +192,17 @@
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="js/blog.min.js"></script>
+<script src="dist/blog.min.js"></script>
+<script>
+    $(function(){
+        $("#post-pager").createPage({
+            totalPage:30,
+            currPage:14,
+            backFn:function(p){
+                console.log("回调函数："+p);
+            }
+        });
+    })
+</script>
 </body>
 </html>

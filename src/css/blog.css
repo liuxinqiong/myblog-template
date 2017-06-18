@@ -3,11 +3,21 @@
  * Copyright 2013-2017 sky
  * Licensed under MIT ()
  */
+html {
+  line-height: 1.15;
+  font-size: inherit;
+}
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 1rem;
+  font-weight: 400;
   color: #333333;
   -webkit-tap-highlight-color: #0085A1;
+  line-height: 1.5;
+}
+.pagination {
+  font-size: 12px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,8 +25,6 @@ body {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
-  padding: 15px 25px;
 }
 .btn-primary {
   color: white;
@@ -126,11 +134,18 @@ blockquote {
   background-color: white;
   border-bottom: 1px solid #eeeeee;
   position: absolute;
+  padding: .5rem 1rem;
+  margin-bottom: 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #mainNav .navbar-brand {
   color: #777777;
   font-weight: 800;
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  height: inherit;
 }
 #mainNav .navbar-toggler {
   color: #777777;
@@ -145,14 +160,25 @@ blockquote {
   border: none;
   outline: 0;
 }
+#mainNav .navbar-toggler-right {
+  position: absolute;
+  right: 1rem;
+}
+#mainNav .navbar-nav {
+  padding: 5px;
+}
 #mainNav .navbar-nav > li.nav-item > a {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
 }
+#mainNav .navbar-nav > li.nav-item > a:active,
+#mainNav .navbar-nav > li.nav-item > a:focus {
+  background: transparent;
+}
 #mainNav .sub-dropdown-menu {
-  top: 68px;
+  top: 76px;
   border: none;
 }
 #mainNav .sub-dropdown-menu > li.nav-item > a {

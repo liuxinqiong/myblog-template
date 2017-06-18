@@ -15,7 +15,7 @@
                 var totalsubpageHtml = "";
                 /************************START*********************/
                 if (args.currPage > 1) {
-                    totalsubpageHtml += "<li class='prev'><a href='javascript:void(0);'>prev</a></li>";
+                    totalsubpageHtml += "<li class='prev'><a href='javascript:void(0);'>&laquo;</a></li>";
                 }
 
                 // 页码大于等于4的时候，添加第一个页码元素
@@ -57,7 +57,7 @@
                 }
 
                 if (args.currPage < args.totalPage) {
-                    totalsubpageHtml += "<li class='next'><a href='javascript:void(0);'>next</a></li>";
+                    totalsubpageHtml += "<li class='next'><a href='javascript:void(0);'>&raquo;</a></li>";
                 }
                 $(target).find(".pagination").html(totalsubpageHtml);
             })(target, args);

@@ -1,12 +1,23 @@
 @import "component/variables.less";
 @import "component/mixins.less";
 
+html{
+  line-height: 1.15;
+  font-size: inherit;
+}
 // 全局
 body {
   .serif-font;
-  font-size: 20px;
+  font-size: 1rem;
+  font-weight:400;
   color: @gray-dark;
   -webkit-tap-highlight-color: @theme-primary;
+  line-height: 1.5;
+}
+
+.pagination{
+  font-size: 12px;
+  .sans-serif-font;
 }
 
 // 按钮组
@@ -16,8 +27,8 @@ body {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
-  padding: 15px 25px;
+  //border-radius: 0;
+  //padding: 15px 25px;
 }
 
 .btn-primary {
@@ -106,10 +117,18 @@ blockquote {
   background-color: white;
   border-bottom: 1px solid @gray-lighter;
   position: absolute;
+  padding: .5rem 1rem;
+  margin-bottom: 0;
+
   .sans-serif-font;
   .navbar-brand {
     color: @gray-light;
     font-weight: 800;
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    height: inherit;
   }
   .navbar-toggler {
     color: @gray-light;
@@ -123,18 +142,26 @@ blockquote {
       outline:0;
     }
   }
+  .navbar-toggler-right{
+    position: absolute;
+    right: 1rem;
+  }
   .navbar-nav {
+    padding:5px;
     > li.nav-item {
       > a {
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 800;
         letter-spacing: 1px;
+        &:active,&:focus{
+          background: transparent;
+        }
       }
     }
   }
   .sub-dropdown-menu{
-    top:68px;
+    top:76px;
     border:none;
     > li.nav-item {
       > a {

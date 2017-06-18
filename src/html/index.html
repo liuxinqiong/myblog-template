@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="sky | 博客">
+    <meta name="author" content="sky">
+    <title>sky | 博客</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional fonts for this theme -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this theme -->
+    <link href="dist/blog.min.css" rel="stylesheet">
+    <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">pig1024.me</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="about.html">归档</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="post.html">标签</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="contact.html">找我</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link page-scroll" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">个人<span class="caret"></span></a>
+                    <ul class="dropdown-menu sub-dropdown-menu">
+                        <li class="nav-item"><a class="nav-link" href="#">发表文章</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">登录</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('asset/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="site-heading">
+                    <h1>Better</h1>
+                    <span class="subheading">Sky的博客，欢迎访问交流</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-search">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        github-markdown-css效果
+                    </h2>
+                </a>
+                <h3 class="post-subtitle">
+                    文章简要，今天是个好日子，我要好好学习呢，测试测试测试文章简要，今天是个好日子，我要好好学习呢，测试测试测试
+                </h3>
+                <p class="post-meta">
+                    <span class="post-meta-left">
+                        <span>Posted by <a href="#">刘新琼</a></span>
+                        <span>on 2017-06-15 18:47</span>
+                    </span>
+                    <span class="post-meta-right">
+                        <span>浏览(8)</span>
+                        <span>留言(2)</span>
+                    </span>
+                </p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        文章标题
+                    </h2>
+                </a>
+                <h3 class="post-subtitle">
+                    文章简要，今天是个好日子，我要好好学习呢
+                </h3>
+                <p class="post-meta">Posted by <a href="#">刘新琼</a> on 2017-06-15 18:47</p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        文章标题
+                    </h2>
+                </a>
+                <h3 class="post-subtitle">
+                    文章简要，今天是个好日子，我要好好学习呢
+                </h3>
+                <p class="post-meta">Posted by <a href="#">刘新琼</a> on 2017-06-15 18:47</p>
+            </div>
+            <hr>
+            <!-- Pager -->
+            <div id="post-pager">
+                <ul class="pagination">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/liuxinqiong">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; pig1024.me 2017.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery Version 3.1.1 -->
+<script src="lib/jquery/jquery.js"></script>
+
+<!-- Tether -->
+<script src="lib/tether/tether.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="lib/bootstrap3/js/bootstrap.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="dist/blog.min.js"></script>
+<script>
+    $(function(){
+        $("#post-pager").createPage({
+            totalPage:30,
+            currPage:14,
+            backFn:function(p){
+                console.log("回调函数："+p);
+            }
+        });
+    })
+</script>
+</body>
+</html>

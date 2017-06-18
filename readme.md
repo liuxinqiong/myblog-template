@@ -19,3 +19,6 @@
 
    - [clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog.git)
    - 在参考的基础上进行修改和功能添加，以便更加符合个人审美和功能需求！
+
+## bootstrap4 vs bootstrap3
+使用bootstrap4项目，相当于是对boostrap3的重写，因此bootstrap3文档中很多语法都不能正常使用。

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现页面内锚点平滑跳转</title><base target="_blank" />
+    <style type="text/css">
+        #hovertree {
+            height: 800px;
+            background: red;
+            text-align:center;color:white;
+        }
+
+        #keleyi {
+            height: 800px;
+            background: green;text-align:center;color:white;
+        }
+
+        #myslider {
+            height: 800px;
+            background: black;text-align:center;color:white;
+        }
+
+        #zonemenu {
+            height: 800px;
+            background: yellow;text-align:center;
+        }
+
+        .keleyilink{position:fixed;}
+        .keleyilink a {text-decoration:none;}
+    </style>
+</head>
+<body>
+<div class="keleyilink">
+    <a href="javascript:scroll('hovertree');" target="_self">HoverTree</a>
+    <a href="javascript:scroll('keleyi');" target="_self">KKK</a>
+    <a href="javascript:scroll('myslider');" target="_self">myslider</a>
+    <a href="javascript:scroll('zonemenu');" target="_self">ZoneMenu</a>
+</div>
+<div id="hovertree">hovertree
+    <br /><br /><br /><a href="">原文</a> <a href="">JJJ</a> <a href="http://hovertree.com">HoverTree</a> <a href="/">特效库</a>
+</div>
+<div id="keleyi">jb51</div>
+<div id="myslider">myslider</div>
+<div id="zonemenu">zonemenu</div>
+<script src="lib/jquery/jquery.js"></script>
+<script>
+    function scroll(id) {
+        $("html,body").animate({scrollTop: $("#"+id).offset().top}, 500);
+    }
+</script>
+</body>
+</html>

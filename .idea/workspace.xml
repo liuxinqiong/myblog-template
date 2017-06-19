@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58ee7e7f-d90c-4966-945b-b92035474560" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/blog.min.css" afterPath="$PROJECT_DIR$/dist/blog.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/blog.min.js" afterPath="$PROJECT_DIR$/dist/blog.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/blog.css" afterPath="$PROJECT_DIR$/src/css/blog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/index.html" afterPath="$PROJECT_DIR$/src/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/post.html" afterPath="$PROJECT_DIR$/src/html/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/pager.js" afterPath="$PROJECT_DIR$/src/js/pager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/blog.less" afterPath="$PROJECT_DIR$/src/less/blog.less" />
     </list>
     <ignored path="my-blog-template.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,16 +64,15 @@
       <file leaf-file-name="post.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/html/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1299">
-              <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
+            <state relative-caret-position="208">
+              <caret line="167" column="74" selection-start-line="167" selection-start-column="74" selection-end-line="167" selection-end-column="74" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#10303#10309#0" expanded="true" />
+                <element signature="e#10060#10066#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +123,7 @@
       <file leaf-file-name="pager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/pager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="1102">
               <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
               <folding>
                 <marker date="1497755534000" expanded="true" signature="609:616" ph="«" />
@@ -546,12 +538,12 @@
       <workItem from="1497423146950" duration="2576000" />
       <workItem from="1497426798596" duration="101000" />
       <workItem from="1497438657385" duration="16946000" />
-      <workItem from="1497670391568" duration="14376000" />
+      <workItem from="1497670391568" duration="16572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34502000" />
+    <option name="totallyTimeSpent" value="36698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1403" height="877" extended-state="6" />
@@ -616,9 +608,8 @@
             <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#10303#10309#0" expanded="true" />
+            <element signature="e#10060#10066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,9 +693,8 @@
             <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#10303#10309#0" expanded="true" />
+            <element signature="e#10060#10066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -987,17 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/pager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-          <folding>
-            <marker date="1497755534000" expanded="true" signature="609:616" ph="«" />
-            <marker date="1497755534000" expanded="true" signature="2685:2692" ph="»" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/component/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -1038,18 +1017,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/pager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+          <folding>
+            <marker date="1497755534000" expanded="true" signature="609:616" ph="«" />
+            <marker date="1497755534000" expanded="true" signature="2685:2692" ph="»" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1299">
-          <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
+        <state relative-caret-position="208">
+          <caret line="167" column="74" selection-start-line="167" selection-start-column="74" selection-end-line="167" selection-end-column="74" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#10303#10309#0" expanded="true" />
+            <element signature="e#10060#10066#0" expanded="true" />
           </folding>
         </state>
       </provider>

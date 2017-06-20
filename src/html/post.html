@@ -12,60 +12,7 @@
     <!-- Additional fonts for this theme -->
     <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this theme -->
-    <link href="../../dist/blog.min.css" rel="stylesheet">
-    <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
-    <style>
-        .navbar-toggler {
-            z-index: 1;
-        }
-
-        @media (max-width: 576px) {
-            nav > .container {
-                width: 100%;
-            }
-        }
-
-        ul.nav-tabs {
-            width: 140px;
-            margin-top: 20px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-        }
-
-        ul.nav-tabs li {
-            margin: 0;
-            border-top: 1px solid #ddd;
-        }
-
-        ul.nav-tabs li:first-child {
-            border-top: none;
-        }
-
-        ul.nav-tabs li a {
-            margin: 0;
-            padding: 8px 16px;
-            border-radius: 0;
-        }
-
-        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
-            color: #fff;
-            background: #0088cc;
-            border: 1px solid #0088cc;
-        }
-
-        ul.nav-tabs li:first-child a {
-            border-radius: 4px 4px 0 0;
-        }
-
-        ul.nav-tabs li:last-child a {
-            border-radius: 0 0 4px 4px;
-        }
-
-        ul.nav-tabs.affix {
-            top: 90px; /* Set the top position of pinned element */
-        }
-    </style>
+    <link href="../../dist/blog.min.css" rel="stylesheet">xs
 </head>
 <body data-spy="scroll" data-target="#postNav">
 <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
@@ -133,32 +80,32 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-1 col-md-10">
             <article id="post-content">
-                <h1 id="Title-H1-0">标题1</h1>
+                <h1>标题1</h1>
                 <p>
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                 </p>
-                <h2 id="test2">标题2</h2>
+                <h2>标题2</h2>
                 <p>
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                 </p>
-                <h3 id="Title-H3-4">标题3</h3>
+                <h3>标题3</h3>
                 <p>
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                 </p>
-                <h4 id="test4">标题4</h4>
+                <h4>标题4</h4>
                 <p>
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                 </p>
-                <h5 id="test5">标题5</h5>
+                <h5>标题5</h5>
                 <p>
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                 </p>
-                <h6 id="test6">标题6标题6标题6标题6标题6</h6>
+                <h6>标题6标题6标题6标题6标题6</h6>
                 <p>
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
                     这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容
@@ -196,8 +143,7 @@
             </article>
         </div>
         <div class="col-lg-3 col-md-2" id="postNav">
-            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="350">
-            </ul>
+            <ul class="nav nav-tabs nav-stacked hidden-print hidden-xs hidden-sm" data-spy="affix" data-offset-top="350"></ul>
         </div>
     </div>
 </div>
@@ -254,7 +200,7 @@
 <script>
 
     $(document).ready(function () {
-        //生成博文内部目录
+        //生成博文内部目录 h3 & h4标签常用
         $("#post-content").children().each(function (index, element) {
             var tagName = $(this).get(0).tagName;
             if (tagName.substr(0, 1) == "H") {
@@ -272,6 +218,10 @@
                 $("#postNav>ul").append("<li><a href='" + hID + "'>" + contentH + "</a></li>");
             }
         });
+        //在 DOM 中添加或删除元素，调用refresh
+        $('[data-spy="scroll"]').each(function () {
+            $(this).scrollspy('refresh')
+        })
         //页面内平滑跳转
         $("#postNav>ul a[href='#']").click(function () {
             $('html,body').animate({scrollTop: 0}, 1000);
@@ -284,7 +234,7 @@
             if (has_mao == -1) return;
             var index_mao = var_href.lastIndexOf("#");
             var sub_href = var_href.substr(index_mao, len_href - index_mao);
-            $('html,body').animate({scrollTop: $(sub_href).offset().top - 90}, 1000);
+            $('html,body').animate({scrollTop: $(sub_href).offset().top }, 1000);
             return false;
         });
     });

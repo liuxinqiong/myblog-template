@@ -19,6 +19,14 @@ body {
   font-size: 12px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.navbar-toggler {
+  z-index: 1;
+}
+@media (max-width: 576px) {
+  nav > .container {
+    width: 100%;
+  }
+}
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -396,6 +404,41 @@ footer .copyright {
   font-size: 14px;
   text-align: center;
   margin-bottom: 0;
+}
+#postNav > ul.nav-tabs {
+  width: 160px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+#postNav > ul.nav-tabs.affix {
+  top: 80px;
+  /* Set the top position of pinned element */
+}
+#postNav > ul.nav-tabs li {
+  margin: 0;
+  border-top: 1px solid #ddd;
+}
+#postNav > ul.nav-tabs li:first-child {
+  border-top: none;
+}
+#postNav > ul.nav-tabs li:first-child a {
+  border-radius: 4px 4px 0 0;
+}
+#postNav > ul.nav-tabs li:last-child a {
+  border-radius: 0 0 4px 4px;
+}
+#postNav > ul.nav-tabs li a {
+  margin: 0;
+  padding: 8px 16px;
+  border-radius: 0;
+}
+#postNav > ul.nav-tabs li.active a,
+#postNav > ul.nav-tabs li.active a:hover {
+  color: #fff;
+  background: #0088cc;
+  border: 1px solid #0088cc;
 }
 .section-heading {
   font-size: 36px;

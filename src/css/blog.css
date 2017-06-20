@@ -343,6 +343,8 @@ blockquote {
 .intro-header .post-search {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 50px;
+  font-size: .75rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #FFFFFF;
   position: absolute;
   width: 100%;
@@ -439,6 +441,27 @@ footer .copyright {
   color: #fff;
   background: #0088cc;
   border: 1px solid #0088cc;
+}
+#post-form .post-input-item {
+  margin-bottom: 10px;
+}
+#post-form .submit-btn {
+  margin: auto;
+}
+#login-form {
+  padding: 1rem;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+#login-form label,
+#login-form input[type='text'] {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+}
+#login-form .post-input-item {
+  margin-bottom: 10px;
 }
 .section-heading {
   font-size: 36px;

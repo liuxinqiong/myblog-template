@@ -479,6 +479,122 @@ footer {
   }
 }
 
+// 留言
+#post-comment{
+  padding:1rem;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34,36,38,.15);
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  .sans-serif-font;
+  h3{
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom:1px solid rgba(34,36,38,.15);
+  }
+  .comment{
+    background: 0 0;
+    margin: .5em 0 0;
+    padding: .5em 0 0;
+    border: none;
+    border-top: none;
+    line-height: 1.2;
+    form{
+      margin-top: 1rem;
+      textarea{
+        margin: 0;
+        -webkit-appearance: none;
+        tap-highlight-color: rgba(255,255,255,0);
+        padding: .78571429em 1em;
+        background: #fff;
+        border: 1px solid rgba(34,36,38,.15);
+        outline: 0;
+        color: rgba(0,0,0,.87);
+        border-radius: .28571429rem;
+        box-shadow: 0 0 0 0 transparent inset;
+        -webkit-transition: color .1s ease,border-color .1s ease;
+        transition: color .1s ease,border-color .1s ease;
+        font-size: 1em;
+        line-height: 1.2857;
+        resize: vertical;
+        margin-bottom: 1rem;
+      }
+    }
+    .avatar{
+      display: block;
+      width: 2.5em;
+      height: auto;
+      float: left;
+      margin: .2em 0 0;
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        border-radius: .25rem;
+      }
+    }
+    .content{
+      margin-left: 3.5em;
+      display: block;
+      position: relative;
+      &:hover>.actions{
+        opacity: 1;
+      }
+    }
+    .author{
+      font-size: 1em;
+      color: rgba(0,0,0,.87);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .matadata{
+      display: inline-block;
+      margin-left: .5em;
+      color: rgba(0,0,0,.4);
+      font-size: .875em;
+      >*{
+        display: inline-block;
+        margin: 0 .5em 0 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .text{
+      margin: .25em 0 .5em;
+      font-size: 1em;
+      word-wrap: break-word;
+      color: rgba(0,0,0,.87);
+      line-height: 1.3;
+      >p{
+       margin: 0;
+      }
+    }
+    .actions{
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      -webkit-transition: opacity .2s ease;
+      transition: opacity .2s ease;
+      -webkit-transition-delay: .1s;
+      transition-delay: .1s;
+      font-size: .875em;
+      a{
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 .75em 0 0;
+        color: rgba(0,0,0,.4);
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
 // Sections
 .section-heading {
   font-size: 36px;

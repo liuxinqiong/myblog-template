@@ -463,6 +463,120 @@ footer .copyright {
 #login-form .post-input-item {
   margin-bottom: 10px;
 }
+#post-comment {
+  padding: 1rem;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#post-comment h3 {
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+#post-comment .comment {
+  background: 0 0;
+  margin: .5em 0 0;
+  padding: .5em 0 0;
+  border: none;
+  border-top: none;
+  line-height: 1.2;
+}
+#post-comment .comment form {
+  margin-top: 1rem;
+}
+#post-comment .comment form textarea {
+  margin: 0;
+  -webkit-appearance: none;
+  tap-highlight-color: rgba(255, 255, 255, 0);
+  padding: .78571429em 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  outline: 0;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: .28571429rem;
+  box-shadow: 0 0 0 0 transparent inset;
+  -webkit-transition: color 0.1s ease, border-color 0.1s ease;
+  transition: color 0.1s ease, border-color 0.1s ease;
+  font-size: 1em;
+  line-height: 1.2857;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+#post-comment .comment .avatar {
+  display: block;
+  width: 2.5em;
+  height: auto;
+  float: left;
+  margin: .2em 0 0;
+}
+#post-comment .comment .avatar img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-radius: .25rem;
+}
+#post-comment .comment .content {
+  margin-left: 3.5em;
+  display: block;
+  position: relative;
+}
+#post-comment .comment .content:hover > .actions {
+  opacity: 1;
+}
+#post-comment .comment .author {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  cursor: pointer;
+}
+#post-comment .comment .matadata {
+  display: inline-block;
+  margin-left: .5em;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: .875em;
+}
+#post-comment .comment .matadata > * {
+  display: inline-block;
+  margin: 0 .5em 0 0;
+}
+#post-comment .comment .matadata:last-child {
+  margin-right: 0;
+}
+#post-comment .comment .text {
+  margin: .25em 0 .5em;
+  font-size: 1em;
+  word-wrap: break-word;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.3;
+}
+#post-comment .comment .text > p {
+  margin: 0;
+}
+#post-comment .comment .actions {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+  font-size: .875em;
+}
+#post-comment .comment .actions a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 .75em 0 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+#post-comment .comment .actions a:last-child {
+  margin-right: 0;
+}
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
